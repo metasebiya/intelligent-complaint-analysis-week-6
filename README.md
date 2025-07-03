@@ -18,20 +18,7 @@ An End-to-End Implementation for Building, Deploying, and Automating a Credit Ri
 
 ---
 
-## 🔍 Credit Scoring Business Understanding
-
-
-Before diving into technical implementation, let’s define key financial concepts relevant to the fintech domain:
-
----
-
-### 💳 Financial Terms
-
-* **Credit**: The provision of loans or financing through technology-driven platforms.
-* **Credit Scoring**: Assigning a quantitative score to estimate a borrower's likelihood of default.
-* **Credit Risk**: The potential financial loss if a borrower fails to meet their obligations.
-
----
+## 🔍 Intelligent Complaint Analysis for Financial Services
 
 
 ## 🔍 Project Overview
