@@ -1,5 +1,5 @@
 # Credit Risk Probability Model for Alternative Data
-An End-to-End Implementation for Building, Deploying, and Automating a Credit Risk Model
+Building a RAG-Powered Chatbot to Turn Customer Feedback into Actionable Insights
 
 ---
 
