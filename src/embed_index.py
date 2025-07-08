@@ -1,13 +1,8 @@
-# import os
-# from langchain_community.vectorstores import FAISS
-# from langchain.docstore.document import Document
-# from langchain_huggingface import HuggingFaceEmbeddings
-# import pandas as pd
 
 import os
 from typing import List
 import pandas as pd
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.schema import Document
@@ -15,7 +10,7 @@ from langchain.schema import Document
 class ComplaintEmbedder:
     def __init__(self,
                  model_name: str = "sentence-transformers/all-MiniLM-L6-v2",
-                 persist_directory: str = "vector_store/chroma_index"):
+                 persist_directory: str = "../vector_store/chroma_index"):
         """
         Initialize the embedder with a chosen model and a directory to persist the vector store.
         """
@@ -64,12 +59,13 @@ class ComplaintEmbedder:
         print(f"🚀 Building ChromaDB index at {self.persist_directory} ...")
 
         os.makedirs(self.persist_directory, exist_ok=True)
-
+        print("✅ Entered here")
         db = Chroma.from_documents(
             documents=documents,
             embedding=self.embedder,
             persist_directory=self.persist_directory
         )
+        print("✅ Finished the db")
         db.persist()
         print("✅ Vector store built and persisted.")
         return db
