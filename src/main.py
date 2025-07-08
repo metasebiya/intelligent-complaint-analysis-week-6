@@ -8,7 +8,7 @@ def main():
     # Step 2: Initialize embedder
     embedder = ComplaintEmbedder(
         model_name="sentence-transformers/all-MiniLM-L6-v2",
-        persist_directory="vector_store/chroma_index"
+        persist_directory="../vector_store/chroma_index"
     )
 
     # Step 3: Chunk complaint narratives
