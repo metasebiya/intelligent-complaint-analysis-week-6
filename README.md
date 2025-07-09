@@ -111,14 +111,6 @@ streamlit run src/app.py
 
 ---
 
-## 📈 Performance & Evaluation
-
-| Question | Answer Summary | Source Chunks (Preview) | Score (1-5) | Notes |
-|----------|----------------|--------------------------|-------------|-------|
-| "Why are users unhappy with BNPL?" | High late fees, unclear terms | [BNPL complaint 1…], [BNPL complaint 2…] | 5 | Matches human intuition |
-
----
-
 ## 📌 Model Notes
 
 - **Embedding Model:** `all-MiniLM-L6-v2`
