@@ -30,7 +30,7 @@ The tool enables internal users (like product managers or compliance officers) t
 - **Prompt Template**: Guides the LLM to answer using only retrieved complaint excerpts
 - **Generator**: Uses an open-source LLM (e.g., Mistral or LLaMA2) to synthesize an answer
 
-### 4. 💬 **Gradio UI**
+### 4. 💬 **Streamlit UI**
 - Ask questions via a user-friendly chat interface
 - View answer + source chunks to validate and build trust
 - One-click "Clear" functionality
